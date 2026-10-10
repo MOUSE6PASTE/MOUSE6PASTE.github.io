@@ -3,7 +3,10 @@ a {color: white;}
 body {
   background-color:black;
   color: white;
-  background-image: url(Images/perlin_noise.png);
+  background-image: url(Images/glimpse.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 img {
