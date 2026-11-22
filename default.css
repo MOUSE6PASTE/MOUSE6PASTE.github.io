@@ -44,21 +44,25 @@ img {
   text-align: center;
 }
 
-.game_display {
-  display: flex;
-  max-width: 40%;
-  border: 5px dashed white;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
 
-.game_display img {
-  width: 100%;
-  height: 100%;
+.game_display {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px
+}
+.game_display > div {
+  text-align: center;
+  border: 5px dashed white;
   object-fit: cover;
   object-position: center;
 }
+.game_display > div img{
+  width: 100%;
+}
+
+
+
 
 .greater_game_display {
   display: flex;
