@@ -14,52 +14,44 @@ img {
   height:300px;
 }
 
+
 .container {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 5px;
-  width: auto;
-  max-width: 900px;
-  margin: 15px auto;
-  flex-wrap: wrap;
-  justify-content: space-around;
+padding: 0px 20px 20px 20px;
+border: 6px solid white;
+background-color: black;
+width: auto;
+max-width: 800px;
+margin: 20px auto;
+font-size: 18px;
 }
 
-.container div {
-  background-color: black;
-  padding: 10px;
-  font-size: 18px;
-  flex: 1 1 auto;
-}
 
 .image_display {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
   max-width: 100%;
-  border-top: 5px dashed white;
-}
-
-.image_display div {
   text-align: center;
 }
+
 
 
 .game_display {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 10px
-}
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  }
 .game_display > div {
-  text-align: center;
-  border: 5px dashed white;
-  object-fit: cover;
-  object-position: center;
+  padding: 10px;
+  text-overflow: clip;
+  aspect-ratio: 4 / 3;
 }
 .game_display > div img{
   width: 100%;
-}
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 5px dashed white;
+  }
 
 
 
@@ -68,7 +60,6 @@ img {
   display: flex;
   max-width: 100%;
 }
-
 .greater_game_display img {
   width: 100%;
   height: 100%;
@@ -78,14 +69,14 @@ img {
 
 
 .nav-links.top {
+  padding: 20px 20px 20px 20px;
   border-bottom: 5px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: auto;
-  max-width: 880px;
+  max-width: 800px;
  }
-
 .nav-links {
   text-align: center;
   font-size: 32px;
@@ -94,7 +85,6 @@ img {
   margin: 0 auto;
   border: 5px solid white;
 }
-
 .nav-links span {
   margin: auto;
   max-width: 100%;
